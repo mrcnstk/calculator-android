@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script> 
+    <title>Kalkulator</title>
+</head>
+<body>
+    <div id="main">
+    <form name="form">
+        <input type="text" name="textbox" id="screen" readonly>
+        <br>
+        <div id="buttonPlate">
+        <div id="row1">
+        <input type="button" class="button special" name="C" value="C" onclick="c()">
+        <input type="button" class="button special" name="bracket" value="()" onclick="brackets()">
+        <input type="button" class="button special" name="percent" value="%" onclick="percen()">
+        <input type="button" class="button special" name="divide" value="/" onclick="insert('/')">
+    </div>
+        <div id="row2">
+        <input type="button" class="button" name="7" value="7" onclick="insert(7)">
+        <input type="button" class="button" name="8" value="8" onclick="insert(8)">
+        <input type="button" class="button" name="9" value="9" onclick="insert(9)">
+        <input type="button" class="button special" name="multiplication" value="x" onclick="insert('*')">
+    </div>  
+        <div id="row3">
+        <input type="button" class="button" name="4" value="4" onclick="insert(4)">
+        <input type="button" class="button" name="5" value="5" onclick="insert(5)">
+        <input type="button" class="button" name="6" value="6" onclick="insert(6)">
+        <input type="button" class="button special" name="substraction" value="-" onclick="insert('-')">
+    </div>
+        <div id="row4">
+        <input type="button" class="button" name="1" value="1" onclick="insert(1)">
+        <input type="button" class="button" name="2" value="2" onclick="insert(2)">
+        <input type="button" class="button" name="3" value="3" onclick="insert(3)">
+        <input type="button" class="button special" name="addition" value="+" onclick="insert('+')">
+    </div>
+        <div id="row5">
+        <input type="button" class="button" name="negation" value="+/-" onclick="neg()">
+        <input type="button" class="button" name="0" value="0" onclick="insert(0)">
+        <input type="button" class="button" name="comma" value="." onclick="insert('.')">
+        <input type="button" class="button special" style="background-color:rgb(253, 229, 8);" value="=" onclick="equal()">
+    </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>
